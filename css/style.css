@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, orange, #e73c7e, #23a6d5, #23d5ab, green);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	/* height: 100vh; */
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+nav{
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    display: block;
+    margin: auto;
+    margin-top: 2vmin;
+    width: 60px;
+    height: 60px;
+}
+h1{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.container{
+    padding: 2vmin 0;
+    max-width: 900px;
+    height: 70vh;
+    margin: auto;
+    overflow-y: auto;
+    background: rgb(0, 0, 0);
+    border-top: 3px solid grey;
+    border-left: 3px solid grey;
+    border-right: 3px solid grey;
+    margin-top: 2vmin;
+    border-radius: 2vmin 2vmin 0 0;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+}
+/* hide scrollbar but allow scrolling */
+
+.container::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+.message{
+    background-color: rgb(218, 218, 218);
+    padding: 5px 15px 5px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-wrap: anywhere;
+    text-align: center;
+    margin: 5px auto;
+    width:fit-content;
+    font-size: 2.5vmin;
+}
+.left{
+    float: left;
+    clear: both; 
+    max-width: 75%;
+    margin: 10px 5px 10px 0;
+    border-radius: 0 6px 6px 0;
+}
+.right{
+    float: right;
+    clear: both;
+    max-width: 75%;
+    margin: 10px 0 10px 5px;
+    border-radius: 6px 0 0 6px;
+}
+.center{
+    text-align: center;
+    margin: 10px auto;
+    clear: both;
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+#send_container{
+    text-align: center;
+    max-width: 900px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    height: 6vmin;
+}
+
+#messageInp{
+    width: 90%;
+    border: 3px solid grey;
+    height: 100%;
+    padding: .5vmin;
+    font-size: 2.5vmin;
+    outline: none;
+}
+
+.btn{
+    cursor: pointer;
+    border: 3px solid grey;
+    outline: none;
+    width: 10%;
+    height: 100%;
+    font-size: 2.3vmin;
+    font-weight: bold;
+}
